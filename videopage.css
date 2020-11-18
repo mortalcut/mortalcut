@@ -1,0 +1,340 @@
+*{
+             margin: 0;
+            padding: 0;
+         
+         }
+        html, body, .container
+        {
+            height: 2500px;
+            margin: 0;
+            padding: 0;
+            background: #090f09;
+         
+            
+        }
+
+P{
+  font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
+            
+            color: #00f;
+            font-size: 1em;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+}
+p1 {font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
+            
+            color: #000;
+            font-size: 1em;
+            font-weight:lighter;
+            font-style: italic;
+  text-transform: lowercase;
+  text-align: center;
+  
+            
+          
+  
+}
+         .mail{
+           
+            display: block;
+     
+            position: fixed;
+              z-index: 1;
+              top: 0;
+            width: 100px;
+            height: 30px;
+            right: 0;
+         
+            
+        font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
+            
+            color: #00f;
+            font-size: 1em;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+        
+            background: azure;
+            
+            
+        }
+p1:hover{ 
+color: #aaa;
+  cursor: context-menu;
+}
+
+a:link {
+  text-decoration:overline;
+}
+A:visited { text-decoration: none; 
+color: #aaa;
+}
+        .container {
+           
+            justify-content: center;
+            margin: auto;
+           
+        }
+        .top{
+ 
+
+              width: 100%;
+              height: 10%;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              opacity: 0.7;
+             
+            }
+         
+
+       
+  .top-bg{
+    position: absolute;
+
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    /*background-image: url(pics/govideo.gif);
+           opacity: 0.5;*/
+            background: #090f09;
+             background-repeat: no-repeat; 
+            background-size:cover;
+}
+
+
+        
+        .top p {
+             font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
+           position: relative;
+            color: #dff6f8;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+            z-index: 2;
+           opacity: .5;
+          text-align: center;
+       
+            
+            width: 10%;
+            height: 80%;
+            margin: 20px auto;
+             
+        
+        }
+        
+        .top p:hover{
+            padding-top: 3px;
+            opacity:1;
+        }
+         
+         #slash{
+            width: 20px;
+            height: 40px;
+            margin: 0 auto;
+           
+                }
+
+.mainvideo{
+       margin-top: 90px;
+  width: 100%;
+            height: 825px;
+  position: relative; 
+      /*background: #0b0c0d;*/
+  background-image: url(pics/bg/bggif.gif)
+  
+  
+}
+
+
+
+.mainvideocell{
+  margin: 0 auto;
+  max-width: 90%;
+ width: 720px;
+            height: 540px;
+  display:block;
+  align-content: center;
+  
+  
+ 
+}
+
+iframe{
+  max-width: 100%;
+  width: 100%;
+  height: inherit;
+  
+}
+.mainvideocell-iframe {
+  max-width: 90%;
+  padding-left: 40px;
+ 
+}
+
+           .videotable{
+            margin-top: 90px;
+           /* background: #040f03;*/
+             /*background-image: url(pics/img-noise-1200x900.png);*/
+             
+             
+           opacity: 0.6;
+            height: 910px;
+            overflow: hidden;   
+              overflow-y: scroll;
+                  
+                
+         }
+
+
+        
+       
+         .videocell1 {
+             
+            /*background-image: url(pics/govideo.gif);*/
+             display:inline-block;
+             
+            width: 33%;
+            height: 270px;
+           /* margin-top: 95px;*/
+           margin-top: 10px;
+          
+           
+             
+         }
+    
+         .videocell2 {
+             
+             
+              display:inline-block;
+              width: 33%;
+              height: 270px;
+             
+           
+             
+           
+         
+             
+         }
+
+
+        .videocell3 {
+             
+              
+             display:inline-block;
+            
+              width: 33%;
+              height: 270px;
+           
+           
+             
+           
+         
+             
+         }
+
+
+
+
+  
+}
+ /*#preview1:hover::before{
+            content:'';
+            background-color: #
+            
+           display: block;
+            width: 100%;
+            height:100%;*/
+      
+            
+        }
+
+    .video {
+            position: fixed;
+             top: 0;
+            left: 0;
+              
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: .8;
+            
+            z-index: 1;
+      display: none;
+ 
+
+          
+}
+.video-visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  
+}
+
+.video-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: azure;
+  cursor:pointer;
+}
+
+       
+        #preview1:target {
+            display: block;
+          position: fixed;
+              top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            z-index: 2;
+        }
+        
+
+            
+         
+         
+         
+         .videocell4 {
+             
+        
+             display:inline-block;
+             background-repeat: no-repeat; 
+          
+              width: 33%;
+              height: 50%;
+            background-size:cover;
+           
+             
+           
+         
+             
+         }
+
+.videotable div {
+           margin-bottom: 4px;
+         }
+
+@media (max-width: 600px) {
+   .videocell1 {
+      width: 100%;
+   }
+}
+@media (max-width: 600px) {
+   .videocell2 {
+      width: 100%;
+   }
+}
+@media (max-width: 600px) {
+   .videocell3 {
+      width: 100%;
+   }
+}
