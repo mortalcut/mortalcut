@@ -1,9 +1,9 @@
-    @font-face {
+@font-face {
     font-family: 'Archivo-Narrow-Bold-Italic';
     src:url('fonts/Archivo-Narrow-Bold-Italic.ttf.woff') format('woff'),
-        url('fonts/Archivo-Narrow-Bold-Italic.ttf.svg#Archivo-Narrow-Bold-Italic') format('svg'),
-        url('fonts/Archivo-Narrow-Bold-Italic.ttf.eot'),
-        url('fonts/Archivo-Narrow-Bold-Italic.ttf.eot?#iefix') format('embedded-opentype'); 
+    url('fonts/Archivo-Narrow-Bold-Italic.ttf.svg#Archivo-Narrow-Bold-Italic') format('svg'),
+    url('fonts/Archivo-Narrow-Bold-Italic.ttf.eot'),
+    url('fonts/Archivo-Narrow-Bold-Italic.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -12,10 +12,10 @@
 html, body {
 
    
-background:url(pics/bg/bggif.gif);
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+     background:url(pics/bg/bggif.gif);
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
   
 }
         
