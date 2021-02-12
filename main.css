@@ -65,10 +65,10 @@ html, body {
         .header {
              
    
-           width: 100%;
-           min-height:10vh;
-            display: flex;
-            justify-content: space-between;
+          width: 100%;
+          min-height:10vh;
+          display: flex;
+          justify-content: space-between;
 
            
              

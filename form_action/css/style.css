@@ -97,7 +97,7 @@ h2 {
 
  .menu {
  	
- animation: 1s ease-out 0s 1 slideInFromTop;
+ 	animation: 1s ease-out 0s 1 slideInFromTop;
 	
   
 	
@@ -141,11 +141,11 @@ fieldset {
 }
 
 input, textarea {
-display: block;
-width: 80%;
-background: #c0c2ba;
-color: grey;
-margin: auto;
+	display: block;
+	width: 80%;
+	background: #c0c2ba;
+	color: grey;
+	margin: auto;
 }
 
 input {
