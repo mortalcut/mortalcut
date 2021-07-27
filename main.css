@@ -52,76 +52,73 @@
 
 
 
-html, body {
-
-   
-     background:url(pics/bg/bggif.gif);
-     
-     overflow: hidden;
-  
-}
+body {
+ color: #00f;
+ font-style: italic;
+ text-transform: uppercase;
+ font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
+ background:url(pics/bg/bggif.gif);
+ }
         
 
-        .header {
+.header {
              
    
-          width: 100%;
-          min-height:10vh;
-          display: flex;
-          justify-content: space-between;
+width: 100%;
+min-height:10vh;
+display: flex;
+justify-content: space-between;
+animation: 1s ease-out 0s 1 slideInFromTop;
+padding: 0px 20px;
 
            
-             
-    
-        }
+}
+
 
 .call, .form {
-  font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
-     width: 100px;
-            height: 50px;
-    border-bottom-left-radius: 5px;
+  
+  width: 100px;
+  height: 50px;
+  border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-       color: #00f;
-            font-size: 1em;
-            font-weight: bold;
-            font-style: italic;
-            text-transform: uppercase;
-            background: #151a19;
-               text-align: center;
-            animation: 1s ease-out 0s 1 slideInFromTop;
+  background: #151a19;
+  text-align: center;
+
 }
 
         
- .call{
-            
-        }
+ 
 .call:hover {
       background: azure;
 }
 
 
- .form{
-
-  
-
- }
 
  .form:hover{
  background: azure;
  }
 
-        .enter{
- 
-            margin:300px;
-            
-            
-            
-          
-         
-          
-            
-            
+  h2 {
+  
+  
+  font-size: 2em;
+  text-align: center;
+  
+  
+  }
+
+h3 {
+  
+
+  font-size: 1em;
+  font-weight: bold;
+  
         }
+
+
+
+
+
         
 #mc {
  color: #00f;
@@ -141,81 +138,60 @@ width: 100%;
   
 }
 
-      .mc{
+h1 {
            
-            font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
-            
-            color: #00f;
-            font-size: 5em;
-            font-weight: bold;
-            font-style: italic;
-            text-transform: uppercase;
-            
-           
-            
-          text-align: center;
+  color: #00f;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
             
             
         }
-       .mc a:link {
-            text-decoration: none;
-             color:  #0b02b0!important;
-            
-         
-        }
-         .mcmore a:link {
-            text-decoration: none;
-             color:  #0b02b0!important;
-            
-         
-        }
+  a:link {
+    text-decoration: none;
+    color:  #0b02b0!important;
+            }
      
-        
-        .mc a:hover{
-            color: azure;
-            
-        }
 
+.main{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 720px;
+}
         
-                .mc a {
-           /* display:block;
-            height: 100%;*/
-         
-            position:absolute;
-        
-            top: 50%;
-            left:50%;
-            transform: translate(-50%,-50%);
+  .enter {
+    align-self: center;
         }
        
-        .mc span {
+  .enter span {
             color: yellow;
-            display: inline-block;
+            
             min-width: 30px;
             -webkit-animation: blink .5s linear infinite;
             animation: blink .5s linear infinite;
           }
 
            
-            @-webkit-keyframes blink {
+   @-webkit-keyframes blink {
             50% { color: rgb(34, 34, 34); }
                 51% { color: rgba(34, 34, 34, 0); }
   
     }
-            @keyframes blink {
+   @keyframes blink {
                 50% { color: rgb(34, 34, 34); }
                 51% { color: rgba(34, 34, 34, 60); }
   
     }
-.mc span:hover {
+.enter span:hover {
             
              color:azure;
-            padding-top: 48px;
+            padding-top: 20px;
             text-align: center;
             display:block;
             
         background:url(pics/mainpagehovergifplay.gif);
-            background-size: cover;
+            background-size:contain;
          
              
             
@@ -259,16 +235,8 @@ width: 100%;
   cursor: help;
   
 }
-.studio h2 {
-  animation: 1s ease-out 0s 1 slideInFromTop;
-  color: #00f;
-  font-size: 200%;
-  text-align: center;
-  font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
-  font-style: italic;
-  text-transform: uppercase;
-  
-}
+
+
 .studio.active {
   
   max-height:300px;

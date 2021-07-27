@@ -25,11 +25,11 @@ P{
 }
 p1 {font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
             
-            color: #000;
+            color: #aaa;
             font-size: 1em;
             font-weight:lighter;
             font-style: italic;
-  text-transform: lowercase;
+/*  text-transform: lowercase;*/
   text-align: center;
   
             
@@ -61,10 +61,12 @@ p1 {font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
             
             
         }
+/*
 p1:hover{ 
 color: #aaa;
   cursor: context-menu;
 }
+*/
 
 a:link {
   text-decoration:overline;
@@ -72,21 +74,21 @@ a:link {
 A:visited { text-decoration: none; 
 color: #aaa;
 }
-        .container {
+.container {
            
             justify-content: center;
             margin: auto;
            
         }
-        .top{
+.top{
  
 
-              width: 100%;
-              height: 10%;
-              position: fixed;
-              z-index: 1;
-              top: 0;
-              opacity: 0.7;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  opacity: 0.7;
              
             }
          
@@ -141,10 +143,14 @@ color: #aaa;
                 }
 
 .mainvideo{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
        margin-top: 90px;
-  width: 100%;
+/*  width: 100%;*/
             height: 825px;
-  position: relative; 
+/*  position: relative; */
       /*background: #0b0c0d;*/
   background-image: url(pics/bg/bggif.gif)
   
@@ -175,6 +181,14 @@ iframe{
   max-width: 90%;
   padding-left: 40px;
  
+}
+
+.main-description {
+  
+  width: 600px;
+  min-height: 120px;
+  margin: 0 auto;
+  background:#040f03 ;
 }
 
            .videotable{
