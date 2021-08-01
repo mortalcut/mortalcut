@@ -70,38 +70,44 @@ display: flex;
 justify-content: space-between;
 animation: 1s ease-out 0s 1 slideInFromTop;
 padding: 0px 20px;
+  
 
            
 }
 
 
 .call, .form {
-  
-  width: 100px;
+  display: flex;
+  min-width: 10%;
   height: 50px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background: #151a19;
-  text-align: center;
+  align-content: center;
+  justify-content: center;
+  padding: 9px;
+  
 
 }
 
         
  
 .call:hover {
-      background: azure;
+  background: azure;
+  font-size: 1.6em;
 }
 
 
 
- .form:hover{
- background: azure;
+.form:hover{
+   background: azure;
+   font-size: 1.6em;
  }
 
   h2 {
   
   
-  font-size: 2em;
+  font-size: 1.4em;
   text-align: center;
   
   
@@ -110,14 +116,43 @@ padding: 0px 20px;
 h3 {
   
 
-  font-size: 1em;
+  font-size: 1,5em;
   font-weight: bold;
+  text-align: center;
   
         }
 
+.studio{
+ 
+ 
+  height: 15%;
+  width: 350px;
+  max-height:3px;
+  cursor: help; 
+  
+    -webkit-transition:max-height 0.2s linear;
+    -moz-transition:max-height 0.2s linear;
+    transition:max-height 0.2s linear;
+  
+  
+}
 
 
 
+.about {
+  
+/*  margin-top:-10px;*/
+ width: 100%;
+ height: 160px;
+ text-align: center;
+ color:#151a19;
+ display: none;
+   
+            text-align: center;
+         font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
+ 
+   z-index:3;
+}
 
         
 #mc {
@@ -126,16 +161,21 @@ h3 {
 .mc1 {
   color: yellow;
   text-shadow: 1px 1px 2px black, 0 0 1em red;
+  font-size: 1.1em;
  
 
   
 }
 .mcmore {
 color: #00f;
-Text-align: right;
+/*Text-align: right;*/
 width: 100%;
-   display: inline-block;
+/*display: inline-block;*/
   
+}
+
+.mcmore:hover {
+  padding-left: 5px;
 }
 
 h1 {
@@ -221,21 +261,6 @@ h1 {
 
   
 }
-.studio{
- 
- 
-  height: 150px;
-  width: 350px;
-   max-height:3px;
-   
-  
-    -webkit-transition:max-height 0.2s linear;
-    -moz-transition:max-height 0.2s linear;
-    transition:max-height 0.2s linear;
-  cursor: help;
-  
-}
-
 
 .studio.active {
   
@@ -257,21 +282,7 @@ h1 {
   display: inline-block;
 }
  
-.about {
-  
-  margin-top:-10px;
-  width: 100%;
-  height: 150px;
- text-align: center;
-  color:#151a19;
- font-size: 16px;
-  display:    none;
-   
-            text-align: center;
-         font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
- 
-   z-index:3;
-}
+
 
  
  
