@@ -32,6 +32,17 @@
   }
 }
 
+@-webkit-keyframes blink {
+            50% { color: rgb(34, 34, 34); }
+                51% { color: rgba(34, 34, 34, 0); }
+  
+    }
+@keyframes blink {
+                50% { color: rgb(34, 34, 34); }
+                51% { color: rgba(34, 34, 34, 60); }
+  
+    }
+
 @font-face {
     font-family: 'Archivo-Narrow-Bold-Italic';
     src:url('fonts/Archivo-Narrow-Bold-Italic.ttf.woff') format('woff'),
@@ -62,12 +73,12 @@ body {
 .header {
              
    
-width: 100%;
-min-height:10vh;
-display: flex;
-justify-content: space-between;
-animation: 1s ease-out 0s 1 slideInFromTop;
-padding: 0px 20px;
+ width: 100%;
+ min-height:10vh;
+ display: flex;
+ justify-content: space-between;
+ animation: 1s ease-out 0s 1 slideInFromTop;
+ padding: 0px 20px;
   
 
            
@@ -77,7 +88,7 @@ padding: 0px 20px;
 .call, .form {
   display: flex;
   min-width: 10%;
-  height: 50px;
+  height: 4em;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background: #151a19;
@@ -92,17 +103,26 @@ padding: 0px 20px;
  
 .call:hover {
   background: azure;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 
 
 .form:hover{
    background: azure;
-   font-size: 1.6em;
+   font-size: 1.4em;
  }
 
-  h2 {
+
+h1 {
+           
+  color: #00f;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
   
   
   font-size: 1.4em;
@@ -114,7 +134,7 @@ padding: 0px 20px;
 h3 {
   
 
-  font-size: 1,5em;
+  font-size: 1.2em;
   font-weight: bold;
   text-align: center;
   
@@ -122,8 +142,9 @@ h3 {
 
 .studio{
  
- 
-  height: 15%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 350px;
   max-height:3px;
   cursor: help; 
@@ -139,23 +160,18 @@ h3 {
 
 .about {
   
-/*  margin-top:-10px;*/
+
  width: 100%;
  height: 160px;
  text-align: center;
  color:#151a19;
  display: none;
-   
-            text-align: center;
-         font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
- 
-   z-index:3;
+ text-align: center;
+ font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
+ z-index:3;
 }
 
-        
-#mc {
- color: #00f;
-}
+
 .mc1 {
   color: yellow;
   text-shadow: 1px 1px 2px black, 0 0 1em red;
@@ -166,28 +182,20 @@ h3 {
 }
 .mcmore {
 color: #00f;
-/*Text-align: right;*/
 width: 100%;
-/*display: inline-block;*/
+
   
 }
 
 .mcmore:hover {
   padding-left: 5px;
 }
-
-h1 {
-           
-  color: #00f;
-  font-size: 5em;
-  font-weight: bold;
-  text-align: center;
             
             
-        }
-  a:link {
-    text-decoration: none;
-    color:  #0b02b0!important;
+        
+a:link {
+  text-decoration: none;
+  color:  #0b02b0!important;
             }
      
 
@@ -195,50 +203,37 @@ h1 {
   display: flex;
   align-content: center;
   justify-content: center;
-  min-height: 720px;
+  height: 75vh;
 }
         
-  .enter {
-    align-self: center;
+.enter {
+  align-self: center;
+  animation: 2s ease-out 0s 1 Opacity;
         }
        
-  .enter span {
-            color: yellow;
-            
-            min-width: 30px;
-            -webkit-animation: blink .5s linear infinite;
-            animation: blink .5s linear infinite;
+.enter span {
+    color: yellow;
+    min-width: 30px;
+    -webkit-animation: blink .5s linear infinite;
+    animation: blink .5s linear infinite;
           }
 
            
-   @-webkit-keyframes blink {
-            50% { color: rgb(34, 34, 34); }
-                51% { color: rgba(34, 34, 34, 0); }
-  
-    }
-   @keyframes blink {
-                50% { color: rgb(34, 34, 34); }
-                51% { color: rgba(34, 34, 34, 60); }
-  
-    }
+   
 .enter span:hover {
             
-             color:azure;
-            padding-top: 20px;
-            text-align: center;
-            display:block;
-            
-        background:url(pics/mainpagehovergifplay.gif);
-            background-size:contain;
-         
-             
-            
-        
-            
-        }
+    color:azure;
+    padding-top: 20px;
+    text-align: center;
+    display:block;
+   animation: 0.3s ease-in 0s 1 Opacity; background:url(pics/mainpagehovergifplay.gif);
+    background-size:cover;
+      }
+
+
 #mortal {
   height: 100px;
-  width: 150px;
+  width: 200px;
   padding-left: 20px;
 
 }
@@ -250,9 +245,7 @@ h1 {
   
 }
  
- .enter{
-  animation: 2s ease-out 0s 1 Opacity;
- }
+
 
 .enter:hover ~ .studio h2 {
   color: yellow;
@@ -263,8 +256,6 @@ h1 {
 .studio.active {
   
   max-height:300px;
-  
-  
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-color: blue;
@@ -279,98 +270,59 @@ h1 {
 .studio.active .about {
   display: inline-block;
 }
- 
+.footer{
+  
+  height: 150px;
+}
 
+.menu {
 
- 
- 
+  background: #090f09;
+ }
 
-        .menu {
-            position: fixed;
-            bottom: 0;
-            margin: 0 auto;
-            width: 100%;
-            padding: 0;
-            background: #090f09;
-
-           
-        }
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  
+}
         
-        .menu ul{width: 100%; 
-            height: 110px;
-         
-            padding: 0;
-            margin: 0;
-            display: table;
-            }
-        
-        
-        .menu li {
+ li {
        
-            display: table-cell;
-            width: 20%;
-            font-weight: bold;
+  display: table-cell;
+  font-weight: bold;
+   width: 100%;
+   height: 150px;
     
         }
-        .menu a {
-          display: flex;
-          width: 100%;
-          height: 100%;
-          justify-content: center;
+    
           
-          font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
-            text-decoration: none;
-             color: #0b02b0;
-            text-transform: uppercase;
-            
-        }
 
-        #click1:hover {
+ li:hover {
             background-color: azure;
          transform: translateY(-10px);
          padding-bottom: 10px;
+   animation: 0.3s ease-in 0s 1 Opacity;
         
-            
-        }
-         #click2:hover {
-            background-color: azure;
-            transform: translateY(-10px);
-        }
-        #click3:hover {
-            background-color: azure;
-            transform: translateY(-10px);
-        }
-         #click4:hover {
-            background-color: azure;
-            transform: translateY(-10px);
-        }
-
-        #click5:hover {
-            background-color: azure;
-            transform: translateY(-10px);
-        }
-
-
-
-
-
-       #click1 a:visited{
+}
+       a:visited{
           color: #2d2e33;
+}
             
-        }
-#click2 a:visited{
-          color: #2d2e33;
-            
-        }
-#click3 a:visited{
-          color: #2d2e33;
-            
-        }
-#click4 a:visited{
-          color: #2d2e33;
-            
-        }
-#click5 a:visited{
-          color: #2d2e33;
-            
-        }
+       
+
+@media (max-width: 550px) {
+   li {
+      width: 100%;
+     
+   }
+}
+
+@media (max-width: 550px) {
+   ul {
+     flex-direction: column;
+      
+     
+   }
+}

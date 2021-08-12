@@ -133,8 +133,7 @@ color: #aaa;
 .iframe{
   
   margin: 0 auto;
-  max-width: 90%;
-  width: 720px;
+  width: 100%;
   height: 540px;
   align-content: center;
    animation: 2s ease-out 0s 1 Opacity;
@@ -145,8 +144,7 @@ color: #aaa;
 }
 
 .main-description {
-  min-width: 600px;
-  width: 30%;
+  width: 100%;
   margin: 0  auto;
   animation: 3s ease-out 0s 1 Opacity;
   
@@ -161,7 +159,7 @@ color: #aaa;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  min-width: 720px;}
+}
   
 .videotable a{
   color: red;
@@ -171,7 +169,7 @@ color: #aaa;
          
 
 .videocell1, .videocell2, .videocell3 {
-  min-width: 600px;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -181,7 +179,7 @@ color: #aaa;
 } 
 
 .video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8 {
-  min-width: 600px;
+  
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -192,8 +190,7 @@ color: #aaa;
 
 .iframe-videotable{
   
-  min-width: 90%;
-  width: 720px;
+  
   height: 360px;
    
 }
@@ -218,23 +215,32 @@ color: #aaa;
 
 
 
+
        
  
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
    .videocell1 {
       width: 100%;
      flex-direction: column;
    }
 }
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
    .videocell2 {
       width: 100%;
      flex-direction: column;
    }
 }
-@media (max-width: 900px) {
+
+@media (max-width: 1024px) {
    .videocell3 {
       width: 100%;
      flex-direction: column;
    }
 }
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
