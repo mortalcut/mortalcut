@@ -271,7 +271,8 @@ a:link {
   display: inline-block;
 }
 .footer{
-  
+  animation: 1.8s ease-out 0s 1 slideInFromBottom ;
+
   height: 150px;
 }
 
@@ -292,23 +293,30 @@ ul {
        
   display: table-cell;
   font-weight: bold;
-   width: 100%;
-   height: 150px;
+  width: 100%;
+  height: 150px;
     
         }
     
           
 
  li:hover {
-            background-color: azure;
-         transform: translateY(-10px);
-         padding-bottom: 10px;
-   animation: 0.3s ease-in 0s 1 Opacity;
+  background-color: azure;
+  transform: translateY(-10px);
+  padding-bottom: 10px;
+  animation: 0.3s ease-in 0s 1 Opacity;
         
 }
-       a:visited{
-          color: #2d2e33;
+
+
+.menu h2 {
+ height: 150px;
 }
+
+  a:visited{
+  color: #2d2e33;
+}
+
             
        
 
