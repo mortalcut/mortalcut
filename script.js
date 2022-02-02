@@ -20,8 +20,19 @@ for(var x=0;x<videocells.length;x++){
 modalWindowClose.addEventListener("click",closeModal)
 //preview1.addEventListener("click",)
 //console.log(videocells)*/
+
 var studio=document.querySelector(".studio")
 studio.addEventListener("click",function(e){
  console.log(e.target)
  e.currentTarget.classList.toggle("active")
 })
+
+ function externalLinks() {
+    links = document.getElementsByTagName("a");
+    for (i=0; i<links.length; i++) {
+      link = links[i];
+      if (link.getAttribute("href") && link.getAttribute("rel") == "external")
+      link.target = "_blank";
+    }
+   }
+   window.onload = externalLinks;
