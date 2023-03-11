@@ -253,7 +253,7 @@ a:link {
   
 }
 
-.studio.active {
+/*.studio.active {
   
   max-height:300px;
   border-bottom-left-radius: 5px;
@@ -269,7 +269,7 @@ a:link {
 }
 .studio.active .about {
   display: inline-block;
-}
+}*/
 .footer{
   animation: 1.8s ease-out 0s 1 slideInFromBottom ;
 
