@@ -91,7 +91,7 @@ body {
   height: 4em;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: #151a19;
+  background: #090f09;
   align-content: center;
   justify-content: center;
   padding: 9px;
@@ -99,7 +99,21 @@ body {
 
 }
 
-        
+.about {
+ 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 10%;
+  height: 4em;
+  cursor: help; 
+  
+    -webkit-transition:max-height 0.2s linear;
+    -moz-transition:max-height 0.2s linear;
+    transition:max-height 0.2s linear;
+  
+  
+}    
  
 .call:hover {
   background: azure;
@@ -116,7 +130,6 @@ body {
 
 h1 {
            
-  color: #00f;
   font-size: 5em;
   font-weight: bold;
   text-align: center;
@@ -125,7 +138,7 @@ h1 {
 h2 {
   
   
-  font-size: 1.4em;
+  font-size: 2em;
   text-align: center;
   
   
@@ -140,75 +153,19 @@ h3 {
   
         }
 
-.studio{
- 
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 350px;
-  max-height:3px;
-  cursor: help; 
-  
-    -webkit-transition:max-height 0.2s linear;
-    -moz-transition:max-height 0.2s linear;
-    transition:max-height 0.2s linear;
-  
-  
-}
 
-
-
-.about {
-  
-
- width: 100%;
- height: 160px;
- text-align: center;
- color:#151a19;
- display: none;
- text-align: center;
- font-family: 'Archivo-Narrow-Bold-Italic', Arial, sans-serif;
- z-index:3;
-}
-
-
-.mc1 {
-  color: yellow;
-  text-shadow: 1px 1px 2px black, 0 0 1em red;
-  font-size: 1.1em;
- 
-
-  
-}
-.mcmore {
-color: #00f;
-width: 100%;
-
-  
-}
-
-.mcmore:hover {
-  padding-left: 5px;
-}
-            
-            
-        
-a:link {
-  text-decoration: none;
-  color:  #0b02b0!important;
-            }
-     
 
 .main{
   display: flex;
-  align-content: center;
   justify-content: center;
   height: 75vh;
 }
-        
+
+
 .enter {
   align-self: center;
   animation: 2s ease-out 0s 1 Opacity;
+  width: 50%;
         }
        
 .enter span {
@@ -223,12 +180,27 @@ a:link {
 .enter span:hover {
             
     color:azure;
-    padding-top: 20px;
-    text-align: center;
-    display:block;
-   animation: 0.3s ease-in 0s 1 Opacity; background:url(pics/mainpagehovergifplay.gif);
+    padding-top: 240px;
+    text-align: left;
+   display: block;
+   font-size: 0.1em;
+   animation: 0.3s ease-in 0s 1 Opacity; 
+   background:url(pics/mainpagehovergifplay.gif);
     background-size:cover;
       }
+
+
+
+            
+            
+        
+a:link {
+  text-decoration: none;
+  color:  #0b02b0!important;
+            }
+     
+
+        
 
 
 #mortal {
@@ -246,34 +218,10 @@ a:link {
 }
  
 
-
-.enter:hover ~ .studio h2 {
-  color: yellow;
-
-  
-}
-
-/*.studio.active {
-  
-  max-height:300px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-color: blue;
-  background-color: azure;
-  z-index: 2;
-}
-.studio.active h2 {
-  color: yellow;
-  text-shadow: 1px 1px 2px black, 0 0 1em red;
- 
-}
-.studio.active .about {
-  display: inline-block;
-}*/
 .footer{
   animation: 1.8s ease-out 0s 1 slideInFromBottom ;
 
-  height: 150px;
+  height: 10vh;
 }
 
 .menu {
@@ -294,7 +242,7 @@ ul {
   display: table-cell;
   font-weight: bold;
   width: 100%;
-  height: 150px;
+  height: 15vh;
     
         }
     
@@ -308,10 +256,6 @@ ul {
         
 }
 
-
-.menu h2 {
- height: 150px;
-}
 
   a:visited{
   color: #2d2e33;
