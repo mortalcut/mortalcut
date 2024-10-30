@@ -262,8 +262,8 @@ li {
 
 
 
-  a:visited{
-  color: #2d2e33;
+  .body a:visited{
+  color: #696969;
 }
 
             
